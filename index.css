@@ -8,6 +8,16 @@
     padding: 3px;
 }
 
+.left-flex-container {
+    display: flex;
+    justify-content: left;
+}
+
+.left-flex-container > div {
+    margin: 3px;
+    padding: 3px;
+}
+
 a{
     color: #202124;
     font-weight: normal;
@@ -19,7 +29,7 @@ a:hover {
 }
 
 body {
-    font-family: Arial,sans-serif;
+    font-family: Roboto,RobotoDraft,Arial,sans-serif;
     font-size: 14px;
 }
 .centre-flex-container {
@@ -80,4 +90,12 @@ input[type="search"]:focus {
     outline: none;
     box-shadow:2px 2px 2px 1px rgba(0,0,0,.1);
 }
-
+div.Mza7yc {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+form {
+    display: block;
+}
