@@ -2,22 +2,47 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CS50W Advanced Search</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <!-- Google svg image source -->
+        <!-- https://commons.wikimedia.org/wiki/Category:Google_SVG_logos#/media/File:Google_2015_logo.svg -->
+        <div><img src="Google_2015_logo.svg" style="width: 74px; height: auto;"></div>
         <div class="right-flex-container">
             <div><a href="index.html">Search</a></div>
             <div><a href="image.html">Image</a></div>
         </div>
-        <div class="left-flex-container">
-            <div style="font-size:20px; color: #d93025; margin: 25px 35px ">Advanced Search</div>
+        <div class="left-flex-container" style="border-bottom:1px solid #ebebeb;">
+            <div style="font-size:20px; color: #d93025; margin: 25px 35px;">Advanced Search</div>
         </div>
         <div class="Mza7yc">
             <form action="https://www.google.com/search">
-                <div>
+                <!-- <div style="margin-bottom: 15px;">
                     <span style="color:#333">Find pages with...</span>
+                </div> -->
+                <div class="grid">
+                    <div class="vertical-align-content" style="font-size: 16px; color: #333">Find pages with...</div>
+                    <div style="margin-right: 16px;"></div>
+                    <div class="vertical-align-content" style="font-size: 13px; color: #777; font-weight: 700; white-space: nowrap;">To do this in the search box.</div>
+                    <div class="vertical-align-content">all these words:</div>
+                    <div style="margin-right: 16px;"><input class="textinput" type="text" name="as_q"></div>
+                    <div class="vertical-align-content" style="font-size: 11px; color: #555; white-space: nowrap; padding-left: 16px;">Type the important words: tri-color rat terrier</div>
+                    <div class="vertical-align-content">this exact word or phrase:</div>
+                    <div style="margin-right: 16px;"><input class="textinput" type="text" name="as_epq"></div>
+                    <div class="vertical-align-content" style="font-size: 11px; color: #555; white-space: nowrap; padding-left: 16px">Put exact words in quotes: "rat terrier"</div>
+                    <div class="vertical-align-content">any of these words:</div>
+                    <div style="margin-right: 16px;"><input class="textinput" type="text" name="as_oq"></div>
+                    <div class="vertical-align-content" style="font-size: 11px; color: #555; white-space: nowrap; padding-left: 16px;">Type OR between all the words you want: miniature OR standard</div>
+                    <div class="vertical-align-content">none of these words:</div>
+                    <div style="margin-right: 16px;"><input class="textinput" type="text" name="as_eq"></div>
+                    <div class="vertical-align-content" style="font-size: 11px; color: #555; white-space: nowrap; padding-left: 16px;">Put a minus sign just before words that you don't want: <BR>-rodent, -"Jack Russell"</div>
+                    <div></div>
+                    <div style="display: flex; justify-content: flex-end"><button class="advanced-search-button" type="submit">Advanced Search</button></div>
+                    <div></div>
                 </div>
+
             </form>
         </div>
     </body>
